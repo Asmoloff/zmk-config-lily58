@@ -1,12 +1,7 @@
 &left_encoder {
-    status = "disabled";
+    a-gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>;
+    b-gpios = <&pro_micro 20 GPIO_ACTIVE_HIGH>;
 };
-
-/*
-&sensors {
-    status = "disabled";
-};
-*/
 
 &vbatt {
     compatible = "zmk,battery-voltage-divider";
