@@ -1,7 +1,6 @@
-&left_encoder {
-    status = "disabled";
-};
-
-&sensors {
-    status = "disabled";
+&vbatt {
+    compatible = "zmk,battery-voltage-divider";
+    io-channels = <&adc 5>;
+    output-ohms = <1000000>;
+    full-ohms = <2000000>;
 };
