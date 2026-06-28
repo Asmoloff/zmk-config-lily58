@@ -1,16 +1,16 @@
 / {
     chosen {
-        zmk,battery = &vbatt_adc;
-    };
-
-    vbatt_adc: vbatt_adc {
-        compatible = "zmk,battery-voltage-divider";
-        io-channels = <&adc 5>;
-        output-ohms = <1000000>;
-        full-ohms = <2000000>;
+        zmk,battery = &vbatt;
     };
 };
 
 &left_encoder {
     status = "disabled";
+};
+
+&vbatt {
+    compatible = "zmk,battery-voltage-divider";
+    io-channels = <&adc 5>;
+    output-ohms = <1000000>;
+    full-ohms = <2000000>;
 };
