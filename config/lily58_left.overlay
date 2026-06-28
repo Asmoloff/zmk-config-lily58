@@ -1,3 +1,11 @@
+&left_encoder {
+    status = "disabled";
+};
+
+&sensors {
+    status = "disabled";
+};
+
 &vbatt {
     compatible = "zmk,battery-voltage-divider";
     io-channels = <&adc 5>;
