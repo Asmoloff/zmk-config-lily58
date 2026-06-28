@@ -2,9 +2,11 @@
     status = "disabled";
 };
 
+/*
 &sensors {
     status = "disabled";
 };
+*/
 
 &vbatt {
     compatible = "zmk,battery-voltage-divider";
