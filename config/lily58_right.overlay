@@ -1,6 +1,6 @@
 &left_encoder {
-    a-gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>;
-    b-gpios = <&pro_micro 20 GPIO_ACTIVE_HIGH>;
+    a-gpios = <&pro_micro 21 0>;
+    b-gpios = <&pro_micro 20 0>;
 };
 
 &vbatt {
